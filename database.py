@@ -4,7 +4,7 @@ import psycopg2
 def establish_connection():
     try:
         # Establish a connection to the PostgreSQL database
-        connection = psycopg2.connect("postgres://moviedb_m9w3_user:HykbOxafVKKsPFtdM4ILl3aOGtIr9qcl@dpg-clats4u16hkc7380rv60-a.oregon-postgres.render.com/moviedb_m9w3")
+        connection = psycopg2.connect("your_database_connection_string")
         return connection
     except psycopg2.Error as e:
         print("Error connecting to the PostgreSQL database:", e)
